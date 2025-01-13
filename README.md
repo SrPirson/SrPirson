@@ -1,4 +1,7 @@
-# 💻 Tecnologías:
+
+---
+
+## 💻 Tecnologías:
 #### Lenguajes
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=flat&logo=openjdk&logoColor=white) 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E) 
@@ -9,8 +12,8 @@
 
 #### Librerías & Frameworks
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=flat&logo=bootstrap&logoColor=white)
-![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=flat&logo=spring&logoColor=white) 
-![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=flat&logo=jquery&logoColor=white) <br/>
+![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=flat&logo=jquery&logoColor=white)
+![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=flat&logo=spring&logoColor=white) <br/>
 
 #### Base de datos
 ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=flat&logo=mysql&logoColor=white) 
@@ -28,18 +31,12 @@
 #### Otros
 ![Plex](https://img.shields.io/badge/plex-%23E5A00D.svg?style=flat&logo=plex&logoColor=white) <br/>
 
-# 📊 Estadísticas:
+## 📊 Estadísticas:
 ![](https://github-readme-stats.vercel.app/api?username=SrPirson&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=false) 
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=SrPirson&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=false&layout=compact)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=SrPirson&theme=tokyonight&hide_border=false)
 
-
-## 🔝 Repositorios
-![](https://github-contributor-stats.vercel.app/api?username=SrPirson&limit=5&theme=tokyonight&combine_all_yearly_contributions=true)
-
-## 🌐 Redes Sociales:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/franciiscortes) 
+## 🌐 Encuéntrame en:
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat&logo=linkedin&logoColor=white)]([https://linkedin.com/in/franciiscortes](https://www.linkedin.com/in/francisco-cort%C3%A9s-pirson-13403a213/)) 
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=flat&logo=Instagram&logoColor=white)](https://instagram.com/franciiscortes) <br/>
 
 ---
-
-[![](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FSrPirson&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visits&edge_flat=false)](https://hits.seeyoufarm.com)
