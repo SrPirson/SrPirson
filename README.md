@@ -48,7 +48,7 @@ TypeScript. En el siguiente gráfico se muestran los lenguajes de programación
 más utilizados en mis proyectos de GitHub. ¡Echa un vistazo y descubre más sobre 
 mis habilidades de programación!
 
-[![TopLangs](https://github-readme-stats.vercel.app/api/top-langs/?username=SrPirson&layout=compact&langs_count=10&hide_title=true)](https://github.com/SrPirson?tab=repositories)<br/><br/>
+[![TopLangs](https://github-readme-stats.vercel.app/api/top-langs/?username=SrPirson&layout=compact&langs_count=10&hide_title=true&theme=dark)](https://github.com/SrPirson?tab=repositories)<br/><br/>
 
 
 ## 🗨️ ¡Hablemos!
