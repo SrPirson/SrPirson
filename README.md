@@ -39,7 +39,7 @@ y trabajar en proyectos innovadores. <br/><br/>
 ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=flat&logo=Canva&logoColor=white)
 ![Gimp](https://img.shields.io/badge/Gimp-657D8B?style=flat&logo=gimp&logoColor=FFFFFF) <br/><br/>
 
-## 📊 Top Lenguajes
+## 💡 Top Lenguajes
 
 Si bien mi especialidad es el desarrollo backend con tecnologías como Java, PHP
 y Laravel, también tengo experiencia en el desarrollo frontend con React y
@@ -49,7 +49,7 @@ mis habilidades de programación!
 
 [![TopLangs](https://github-readme-stats.vercel.app/api/top-langs/?username=SrPirson&layout=compact&langs_count=10&hide_title=true&theme=dark)](https://github.com/SrPirson?tab=repositories)<br/><br/>
 
-## 😨 ¡Hablemos!
+## 🗨️ ¡Hablemos!
 
 Si quieres conocer más sobre mi experiencia y habilidades, te invito a visitar
 mi perfil de [LinkedIn](https://www.linkedin.com/in/franciscocortespirson/). ¡No dudes
