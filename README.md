@@ -56,5 +56,5 @@ mi perfil de [LinkedIn](https://www.linkedin.com/in/franciscocortespirson/). ¡N
 en ponerte en contacto conmigo si te interesa que trabajemos juntos en algún
 proyecto emocionante!
 
-¡Gracias por visitar mi perfil! ¡Hablemos pronto! 🚀
+¡Gracias por visitar mi perfil! ¡Hasta pronto! 🚀
 
