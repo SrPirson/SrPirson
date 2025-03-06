@@ -4,7 +4,7 @@
 
 ¡Bienvenido a mi perfil de GitHub! Soy desarrollador web en formación,
 actualmente estudiando el Grado Superior de Desarrollo de Aplicaciones Web.
-Me apasiona la programación y siempre busco mejorar mis habilidades técnicas
+Me apasiona la programación, siempre busco mejorar mis habilidades técnicas
 y trabajar en proyectos innovadores. <br/><br/>
 
 ## 💻 Habilidades técnicas
