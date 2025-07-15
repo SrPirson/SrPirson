@@ -47,7 +47,7 @@ y trabajar en proyectos innovadores. <br/><br/>
 ## 💡 Top Lenguajes
 
 Si bien mi especialidad es el desarrollo backend con tecnologías como Java, PHP
-y Laravel, también tengo experiencia en el desarrollo frontend con React y
+y JavaScript, también tengo experiencia en el desarrollo frontend con React y
 TypeScript. En el siguiente gráfico se muestran los lenguajes de programación
 más utilizados en mis proyectos de GitHub. ¡Echa un vistazo y descubre más sobre
 mis habilidades de programación!
