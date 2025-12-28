@@ -20,7 +20,7 @@ He completado el **Grado Superior en Desarrollo de Aplicaciones Web**, y me apas
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-%238511FA.svg?style=flat&logo=bootstrap&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-%2338B2AC.svg?style=flat&logo=tailwind-css&logoColor=white)
 ![jQuery](https://img.shields.io/badge/JQuery-%230769AD.svg?style=flat&logo=jquery&logoColor=white)
-![Spring](https://img.shields.io/badge/Spring-%236DB33F.svg?style=flat&logo=spring&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat&logo=springboot&logoColor=white)
 ![Laravel](https://img.shields.io/badge/Laravel-%23FF2D20.svg?style=flat&logo=laravel&logoColor=white)
 ![JSP](https://img.shields.io/badge/JSP-%23F8DC75.svg?style=flat&logo=openjdk&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-%2343853D.svg?style=flat&logo=node.js&logoColor=white)
@@ -47,7 +47,7 @@ He completado el **Grado Superior en Desarrollo de Aplicaciones Web**, y me apas
 Mi especialidad es el **desarrollo backend** con tecnologías como **Java, PHP y JavaScript**, aunque también tengo experiencia en **frontend** con **React y TypeScript**.  
 En el siguiente gráfico puedes ver los lenguajes más utilizados en mis proyectos de GitHub:
 
-[![TopLangs](https://github-readme-stats.vercel.app/api/top-langs/?username=SrPirson&layout=compact&langs_count=10&hide_title=true&theme=dark)](https://github.com/SrPirson?tab=repositories)<br/><br/>
+![Top Lenguajes](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=SrPirson&theme=github_dark)<br/><br/>
 
 ## 🗨️ ¡Hablemos!
 
