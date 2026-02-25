@@ -44,7 +44,7 @@ He completado el **Grado Superior en Desarrollo de Aplicaciones Web**, y me apas
 
 ## 💡 Top Lenguajes
 
-Mi especialidad es el **desarrollo backend** con tecnologías como **Java, PHP y JavaScript**, aunque también tengo experiencia en **frontend** con **React y TypeScript**.  
+Mi especialidad es el desarrollo **backend** con tecnologías como **Java, Spring Boot, PHP** y **frontend** con **React, Tailwind, Bootstrap y CSS3**.  
 En el siguiente gráfico puedes ver los lenguajes más utilizados en mis proyectos de GitHub:
 
 ![Top Lenguajes](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=SrPirson&theme=github_dark)<br/><br/>
