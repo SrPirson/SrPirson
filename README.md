@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://pirsondev.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-pirsondev-111827?style=for-the-badge&logo=vercel&logoColor=white"/></a>
+  <a href="https://pirson.dev/"><img src="https://img.shields.io/badge/Portfolio-pirson.dev-111827?style=for-the-badge&logo=vercel&logoColor=white"/></a>
   <a href="https://www.linkedin.com/in/franciscocortespirson/"><img src="https://img.shields.io/badge/LinkedIn-Francisco-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 </p>
 
@@ -17,7 +17,7 @@ I'm a **frontend developer** with a Higher Technical Degree in Web Application D
 
 | Project | What it is | Stack |
 |---|---|---|
-| [Portfolio](https://github.com/SrPirson/Portfolio) · [live](https://pirsondev.vercel.app/) | My personal site | React · Vite · TypeScript |
+| [Portfolio](https://github.com/SrPirson/Portfolio) · [live](https://pirson.dev/) | My personal site | React · Vite · TypeScript |
 | [Box Box](https://github.com/SrPirson/Box-Box) | PWA for race teams: live comms, lap timing and telemetry between pit wall and driver | JavaScript · PWA |
 | [Instagram Unfollowers](https://github.com/SrPirson/Unfollowers_IG) · [live](https://unfollowers-ig-extension.vercel.app) | Browser extension that shows who doesn't follow you back, with light/dark mode and 10 languages | TypeScript · Manifest V3 |
 | [cabina](https://github.com/SrPirson/cabina) | Side pane for Claude Code: model, context, rate limits and cost at a glance | TypeScript |
@@ -69,4 +69,4 @@ In my spare time I write World of Warcraft addons in Lua. You can find them at [
 
 ## Contact
 
-Have a project in mind or an open position? Message me on [LinkedIn](https://www.linkedin.com/in/franciscocortespirson/) or take a look at my [portfolio](https://pirsondev.vercel.app/).
+Have a project in mind or an open position? Message me on [LinkedIn](https://www.linkedin.com/in/franciscocortespirson/) or take a look at my [portfolio](https://pirson.dev/).

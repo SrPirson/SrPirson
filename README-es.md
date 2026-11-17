@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://pirsondev.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-pirsondev-111827?style=for-the-badge&logo=vercel&logoColor=white"/></a>
+  <a href="https://pirson.dev/"><img src="https://img.shields.io/badge/Portfolio-pirson.dev-111827?style=for-the-badge&logo=vercel&logoColor=white"/></a>
   <a href="https://www.linkedin.com/in/franciscocortespirson/"><img src="https://img.shields.io/badge/LinkedIn-Francisco-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 </p>
 
@@ -17,7 +17,7 @@ Soy **desarrollador frontend** con el Grado Superior en Desarrollo de Aplicacion
 
 | Proyecto | Qué es | Stack |
 |---|---|---|
-| [Portfolio](https://github.com/SrPirson/Portfolio) · [demo](https://pirsondev.vercel.app/) | Mi web personal | React · Vite · TypeScript |
+| [Portfolio](https://github.com/SrPirson/Portfolio) · [demo](https://pirson.dev/) | Mi web personal | React · Vite · TypeScript |
 | [Box Box](https://github.com/SrPirson/Box-Box) | PWA para equipos de carreras: comunicación en directo, cronometraje de vueltas y telemetría entre el muro y el piloto | JavaScript · PWA |
 | [Instagram Unfollowers](https://github.com/SrPirson/Unfollowers_IG) · [demo](https://unfollowers-ig-extension.vercel.app) | Extensión de navegador que muestra quién no te sigue de vuelta, con modo claro/oscuro y 10 idiomas | TypeScript · Manifest V3 |
 | [cabina](https://github.com/SrPirson/cabina) | Panel lateral para Claude Code: modelo, contexto, límites y coste de un vistazo | TypeScript |
@@ -69,4 +69,4 @@ En mi tiempo libre escribo addons de World of Warcraft en Lua. Los tienes en [Pi
 
 ## Contacto
 
-¿Tienes un proyecto en mente o una vacante? Escríbeme por [LinkedIn](https://www.linkedin.com/in/franciscocortespirson/) o echa un vistazo a mi [portfolio](https://pirsondev.vercel.app/).
+¿Tienes un proyecto en mente o una vacante? Escríbeme por [LinkedIn](https://www.linkedin.com/in/franciscocortespirson/) o echa un vistazo a mi [portfolio](https://pirson.dev/).
