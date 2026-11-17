@@ -1,59 +1,77 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="452" viewBox="0 0 840 452" role="img" aria-labelledby="t">
-  <title id="t">Francisco (SrPirson) - Desarrollador Web Full Stack de Málaga, España</title>
+  <title id="t">Francisco (SrPirson) - Desarrollador Frontend de Málaga, España</title>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#11142a"/>
-      <stop offset="1" stop-color="#070812"/>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#22d3ee"/>
     </linearGradient>
-    <linearGradient id="icon" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#7c3aed"/>
-      <stop offset="1" stop-color="#1e1b4b"/>
-    </linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ffd100" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#fff3b0"/>
-      <stop offset="1" stop-color="#ffd100" stop-opacity="0"/>
-    </linearGradient>
+    <clipPath id="win"><rect x="10" y="10" width="820" height="432" rx="12"/></clipPath>
   </defs>
   <style>
-    text { font-family: Verdana, "DejaVu Sans", Arial, sans-serif; font-size: 16px; fill: #fff; }
-    .title { font-family: Georgia, "Times New Roman", serif; font-size: 24px; font-weight: bold; fill: #ff8000; }
-    .green { fill: #1eff00; }
-    .flavor { fill: #ffd100; font-style: italic; }
-    .dim { fill: #9d9d9d; }
-    .l { opacity: 0; animation: in .45s ease-out forwards; }
-    .glint { animation: run 7s linear infinite; }
-    .icon { animation: pulse 3s ease-in-out infinite; }
-    @keyframes in { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
-    @keyframes run { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -1000; } }
-    @keyframes pulse { 50% { stroke: #fff3b0; } }
-    @media (prefers-reduced-motion: reduce) { .l, .glint, .icon { animation: none; opacity: 1; } }
+    text { font-family: "Segoe UI", Inter, "DejaVu Sans", Arial, sans-serif; fill: #e6edf3; }
+    .code text, .mono { font-family: Consolas, "JetBrains Mono", "DejaVu Sans Mono", monospace; font-size: 14px; white-space: pre; }
+    .n { fill: #484f58; text-anchor: end; }
+    .k { fill: #ff7b72; } .s { fill: #a5d6ff; } .c { fill: #7ee787; } .a { fill: #d2a8ff; } .p { fill: #c9d1d9; } .f { fill: #d2a8ff; }
+    .type { clip-path: inset(0 100% 0 0); animation: type .45s steps(24, end) forwards; }
+    .show { opacity: 0; animation: show .6s ease-out forwards; }
+    .caret { animation: blink 1s step-end infinite; }
+    @keyframes type { to { clip-path: inset(0 0 0 0); } }
+    @keyframes show { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .type, .show, .caret { animation: none; clip-path: none; opacity: 1; } }
   </style>
 
-  <!-- icono del objeto -->
-  <rect class="icon" x="16" y="18" width="72" height="72" rx="6" fill="url(#icon)" stroke="#ffd100" stroke-width="2"/>
-  <text x="52" y="63" text-anchor="middle" style="font-family: Consolas, 'DejaVu Sans Mono', monospace; font-size: 26px; font-weight: bold;">&lt;/&gt;</text>
+  <g clip-path="url(#win)">
+    <!-- navegador -->
+    <rect x="10" y="10" width="820" height="432" fill="#0d1117"/>
+    <rect x="10" y="10" width="820" height="44" fill="#161b22"/>
+    <circle cx="34" cy="32" r="6" fill="#ff5f57"/><circle cx="54" cy="32" r="6" fill="#febc2e"/><circle cx="74" cy="32" r="6" fill="#28c840"/>
+    <rect x="250" y="20" width="340" height="24" rx="12" fill="#0d1117"/>
+    <text x="420" y="37" text-anchor="middle" style="font-size:13px; fill:#8b949e">pirsondev.vercel.app</text>
 
-  <!-- tooltip -->
-  <rect x="104" y="10" width="726" height="432" rx="8" fill="url(#bg)" stroke="#4a4f6a" stroke-width="2"/>
-  <rect class="glint" x="104" y="10" width="726" height="432" rx="8" fill="none" stroke="url(#gold)" stroke-width="2.5" pathLength="1000" stroke-dasharray="90 910"/>
+    <!-- editor -->
+    <rect x="10" y="54" width="470" height="388" fill="#0d1117"/>
+    <rect x="10" y="54" width="470" height="30" fill="#161b22"/>
+    <rect x="10" y="54" width="120" height="30" fill="#0d1117"/>
+    <rect x="10" y="82" width="120" height="2" fill="url(#accent)"/>
+    <text x="24" y="74" class="mono" style="font-size:13px">Francisco.tsx</text>
 
-  <text class="l title" x="128" y="50" style="animation-delay:.1s">Francisco · SrPirson</text>
-  <text class="l" x="128" y="82" style="animation-delay:.3s">Ligado al alma</text>
-  <text class="l" x="128" y="106" style="animation-delay:.45s">Único - Equipado</text>
-  <text class="l" x="128" y="130" style="animation-delay:.6s">Full Stack</text>
-  <text class="l" x="806" y="130" text-anchor="end" style="animation-delay:.6s">Desarrollador Web</text>
+    <g class="code">
+      <text class="n" x="40" y="110">1</text><text class="n" x="40" y="132">2</text><text class="n" x="40" y="154">3</text><text class="n" x="40" y="176">4</text><text class="n" x="40" y="198">5</text><text class="n" x="40" y="220">6</text><text class="n" x="40" y="242">7</text><text class="n" x="40" y="264">8</text><text class="n" x="40" y="286">9</text><text class="n" x="40" y="308">10</text><text class="n" x="40" y="330">11</text><text class="n" x="40" y="352">12</text>
 
-  <text class="l" x="128" y="164" style="animation-delay:.8s">+15 Java · Spring Boot</text>
-  <text class="l" x="128" y="188" style="animation-delay:.95s">+14 JavaScript · TypeScript · React</text>
-  <text class="l" x="128" y="212" style="animation-delay:1.1s">+12 PHP · Laravel · SQL</text>
-  <text class="l" x="128" y="236" style="animation-delay:1.25s">+10 Lua · Python</text>
+      <text class="type" x="54" y="110" style="animation-delay:.2s"><tspan class="k">import</tspan> <tspan class="p">{ Developer }</tspan> <tspan class="k">from</tspan> <tspan class="s">"./me"</tspan><tspan class="p">;</tspan></text>
+      <text class="type" x="54" y="154" style="animation-delay:.6s"><tspan class="k">export default function</tspan> <tspan class="f">Francisco</tspan><tspan class="p">() {</tspan></text>
+      <text class="type" x="54" y="176" style="animation-delay:1s"><tspan class="p">  </tspan><tspan class="k">return</tspan><tspan class="p"> (</tspan></text>
+      <text class="type" x="54" y="198" style="animation-delay:1.3s"><tspan class="p">    &lt;</tspan><tspan class="c">Developer</tspan></text>
+      <text class="type" x="54" y="220" style="animation-delay:1.6s"><tspan class="a">      role</tspan><tspan class="p">=</tspan><tspan class="s">"Desarrollador Frontend"</tspan></text>
+      <text class="type" x="54" y="242" style="animation-delay:2s"><tspan class="a">      stack</tspan><tspan class="p">={[</tspan><tspan class="s">"React"</tspan><tspan class="p">, </tspan><tspan class="s">"TypeScript"</tspan><tspan class="p">, </tspan><tspan class="s">"Tailwind"</tspan><tspan class="p">]}</tspan></text>
+      <text class="type" x="54" y="264" style="animation-delay:2.4s"><tspan class="a">      also</tspan><tspan class="p">={[</tspan><tspan class="s">"Java"</tspan><tspan class="p">, </tspan><tspan class="s">"Spring Boot"</tspan><tspan class="p">, </tspan><tspan class="s">"PHP"</tspan><tspan class="p">]}</tspan></text>
+      <text class="type" x="54" y="286" style="animation-delay:2.8s"><tspan class="a">      based</tspan><tspan class="p">=</tspan><tspan class="s">"Málaga, ES"</tspan></text>
+      <text class="type" x="54" y="308" style="animation-delay:3.1s"><tspan class="p">    /&gt;</tspan></text>
+      <text class="type" x="54" y="330" style="animation-delay:3.3s"><tspan class="p">  );</tspan></text>
+      <text class="type" x="54" y="352" style="animation-delay:3.5s"><tspan class="p">}</tspan><tspan class="caret" style="fill:#22d3ee">▍</tspan></text>
+    </g>
 
-  <text class="l green" x="128" y="270" style="animation-delay:1.5s">Equipar: Publica más de 20 addons open source de World of Warcraft.</text>
-  <text class="l green" x="128" y="294" style="animation-delay:1.7s">Equipar: Crea herramientas para Claude Code (cabina, webeyes).</text>
-  <text class="l green" x="128" y="318" style="animation-delay:1.9s">Uso: Convierte una idea en una app desplegada. (Sin reutilización)</text>
+    <!-- status bar -->
+    <rect x="10" y="414" width="470" height="28" fill="#161b22"/>
+    <text class="show mono" x="24" y="433" style="font-size:12px; fill:#7ee787; animation-delay:3.9s">✓ Compilado correctamente en 312 ms</text>
 
-  <text class="l" x="128" y="352" style="animation-delay:2.1s">Durabilidad 100 / 100</text>
-  <text class="l dim" x="128" y="376" style="animation-delay:2.25s">Ubicación: Málaga, España</text>
-  <text class="l flavor" x="128" y="414" style="animation-delay:2.5s">«Formado como desarrollador web. Sigo subiendo de nivel.»</text>
+    <!-- preview -->
+    <rect x="480" y="54" width="350" height="388" fill="#f6f8fa"/>
+    <rect x="480" y="54" width="1" height="388" fill="#30363d"/>
+    <g class="show" style="animation-delay:4.1s">
+      <rect x="510" y="96" width="290" height="300" rx="16" fill="#ffffff" stroke="#d0d7de"/>
+      <circle cx="655" cy="152" r="34" fill="url(#accent)"/>
+      <text x="655" y="163" text-anchor="middle" style="font-size:30px; font-weight:700; fill:#fff">F</text>
+      <text x="655" y="218" text-anchor="middle" style="font-size:22px; font-weight:700; fill:#1f2328">Francisco</text>
+      <text x="655" y="243" text-anchor="middle" style="font-size:15px; fill:#6366f1; font-weight:600">Desarrollador Frontend</text>
+      <text x="655" y="265" text-anchor="middle" style="font-size:13px; fill:#656d76">Málaga, España</text>
+      <rect x="530" y="284" width="62" height="24" rx="12" fill="#e0f2fe"/><text x="561" y="301" text-anchor="middle" style="font-size:12px; fill:#0369a1">React</text>
+      <rect x="600" y="284" width="96" height="24" rx="12" fill="#e0e7ff"/><text x="648" y="301" text-anchor="middle" style="font-size:12px; fill:#4338ca">TypeScript</text>
+      <rect x="704" y="284" width="76" height="24" rx="12" fill="#ccfbf1"/><text x="742" y="301" text-anchor="middle" style="font-size:12px; fill:#0f766e">Tailwind</text>
+      <rect x="575" y="334" width="160" height="38" rx="19" fill="url(#accent)"/>
+      <text x="655" y="358" text-anchor="middle" style="font-size:14px; font-weight:600; fill:#fff">Hablemos →</text>
+    </g>
+  </g>
+  <rect x="10" y="10" width="820" height="432" rx="12" fill="none" stroke="#30363d"/>
 </svg>

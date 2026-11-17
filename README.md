@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/card-en.svg" width="760" alt="Item tooltip for Francisco (SrPirson), Full Stack Web Developer: Java, Spring Boot, JavaScript, TypeScript, React, PHP, Laravel, SQL, Lua and Python. Ships 20+ open-source World of Warcraft addons and builds tools for Claude Code. Based in Málaga, Spain."/>
+  <img src="assets/card-en.svg" width="760" alt="A browser window where a React component called Francisco is typed out and then rendered: Frontend Developer from Málaga, Spain, working with React, TypeScript and Tailwind, plus Java, Spring Boot and PHP."/>
 </p>
 
 <p align="center">
@@ -9,53 +9,43 @@
 <p align="center">
   <a href="https://pirsondev.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-pirsondev-111827?style=for-the-badge&logo=vercel&logoColor=white"/></a>
   <a href="https://www.linkedin.com/in/franciscocortespirson/"><img src="https://img.shields.io/badge/LinkedIn-Francisco-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="https://github.com/Pirson-s-Addons"><img src="https://img.shields.io/badge/WoW_Addons-20+-ff8000?style=for-the-badge&logo=github&logoColor=white"/></a>
 </p>
 
-Full stack web developer with a **Higher Technical Degree in Web Application Development (DAW)**. I build backends with **Java, Spring Boot and PHP**, frontends with **React and Tailwind**, and in my spare time I write World of Warcraft addons in **Lua**, published on CurseForge.
+I'm a **frontend developer** with a Higher Technical Degree in Web Application Development (DAW). I build fast, accessible interfaces with **React, TypeScript and Tailwind**, and I'm comfortable on the backend with **Java, Spring Boot and PHP** when a project needs the full stack.
 
-## Inventory · featured projects
+## Featured projects
 
-| Rarity | Project | What it does | Stack |
-|:--:|---|---|---|
-| ![Legendary](https://img.shields.io/badge/Legendary-ff8000?style=flat-square) | [Pirson's Addons](https://github.com/Pirson-s-Addons) | 20+ open-source WoW addons published on CurseForge | Lua |
-| ![Legendary](https://img.shields.io/badge/Legendary-ff8000?style=flat-square) | [WoW Translator](https://github.com/Pirson-s-Addons/WoW-Translator) | Translates WoW chat slang into 44 languages, on every game version | Lua |
-| ![Epic](https://img.shields.io/badge/Epic-a335ee?style=flat-square) | [Dungeon Quest Atlas](https://github.com/Pirson-s-Addons/DungeonQuestAtlas) | Every dungeon quest, boss and loot table in one journal window | Lua |
-| ![Epic](https://img.shields.io/badge/Epic-a335ee?style=flat-square) | [cabina](https://github.com/SrPirson/cabina) | Side pane for Claude Code: model, context, rate limits and cost at a glance | TypeScript |
-| ![Epic](https://img.shields.io/badge/Epic-a335ee?style=flat-square) | [webeyes](https://github.com/SrPirson/webeyes) | Claude Code plugin that lets the agent watch and summarize videos | Python |
-| ![Rare](https://img.shields.io/badge/Rare-0070dd?style=flat-square) | [TFG SocialiCar](https://github.com/SrPirson/TFG-SocialiCar) | Final degree project (DAW) | PHP |
-| ![Rare](https://img.shields.io/badge/Rare-0070dd?style=flat-square) | [Portfolio](https://github.com/SrPirson/Portfolio) | My personal site, [pirsondev.vercel.app](https://pirsondev.vercel.app/) | JavaScript |
+| Project | What it is | Stack |
+|---|---|---|
+| [Portfolio](https://github.com/SrPirson/Portfolio) · [live](https://pirsondev.vercel.app/) | My personal site | React · Vite · TypeScript |
+| [Box Box](https://github.com/SrPirson/Box-Box) | PWA for race teams: live comms, lap timing and telemetry between pit wall and driver | JavaScript · PWA |
+| [Instagram Unfollowers](https://github.com/SrPirson/Unfollowers_IG) · [live](https://unfollowers-ig-extension.vercel.app) | Browser extension that shows who doesn't follow you back, with light/dark mode and 10 languages | TypeScript · Manifest V3 |
+| [cabina](https://github.com/SrPirson/cabina) | Side pane for Claude Code: model, context, rate limits and cost at a glance | TypeScript |
+| [SocialiCar](https://github.com/SrPirson/TFG-SocialiCar) · [live](https://socialicar.wuaze.com/) | Final degree project (DAW) | PHP · JavaScript · SCSS |
+| [NexeCare](https://github.com/SrPirson/NexeCare-Hackathon) | Hackathon project | JavaScript · Java |
 
-## Quest log
+## Tech stack
 
-- [x] Complete the Higher Technical Degree in Web Application Development
-- [x] Publish 20+ addons and keep them updated with every game patch
-- [x] Ship developer tools for AI coding agents
-- [ ] Join a team where I can keep building products people use every day
-
-## Talents · tech stack
-
-**Languages**<br/>
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E)
+**Frontend**<br/>
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
-![Lua](https://img.shields.io/badge/Lua-0000CD?style=flat&logo=lua&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3670A0?style=flat&logo=python&logoColor=ffdd54)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css&logoColor=white)
-
-**Frameworks & libraries**<br/>
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=springboot&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-8511FA?style=flat&logo=bootstrap&logoColor=white)
 ![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white)
-![JSP](https://img.shields.io/badge/JSP-F8DC75?style=flat&logo=openjdk&logoColor=black)
 ![Pug](https://img.shields.io/badge/Pug-A86454?style=flat&logo=pug&logoColor=white)
+
+**Backend**<br/>
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=springboot&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3670A0?style=flat&logo=python&logoColor=ffdd54)
+![JSP](https://img.shields.io/badge/JSP-F8DC75?style=flat&logo=openjdk&logoColor=black)
 
 **Databases & servers**<br/>
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
@@ -73,6 +63,10 @@ Full stack web developer with a **Higher Technical Degree in Web Application Dev
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=SrPirson&theme=github_dark" alt="Most used languages in my GitHub commits"/>
 </p>
 
-## Party up
+## Outside work
+
+In my spare time I write World of Warcraft addons in Lua. You can find them at [Pirson's Addons](https://github.com/Pirson-s-Addons).
+
+## Contact
 
 Have a project in mind or an open position? Message me on [LinkedIn](https://www.linkedin.com/in/franciscocortespirson/) or take a look at my [portfolio](https://pirsondev.vercel.app/).
