@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="410" height="172" viewBox="0 0 410 172" role="img" aria-label="github.com/SrPirson/cabina">
+  <defs><linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366f1"/><stop offset="1" stop-color="#22d3ee"/></linearGradient><clipPath id="r"><rect width="410" height="172" rx="10"/></clipPath></defs>
+  <style>
+    text { font-family: 'Segoe UI', Inter, 'DejaVu Sans', Arial, sans-serif; font-size: 14px; fill: #1f2328; }
+    .mono { font-family: Consolas, 'JetBrains Mono', 'DejaVu Sans Mono', monospace; white-space: pre; }
+    .dim { fill: #57606a; }
+    .in { opacity: 0; animation: in .5s ease-out forwards; }
+    .caret { animation: blink 1s step-end infinite; }
+    @keyframes in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .in, .caret { animation: none; opacity: 1; } }
+  </style>
+  <g clip-path="url(#r)">
+    <rect width="410" height="172" fill="#ffffff"/>
+    <rect width="410" height="34" fill="#f6f8fa"/>
+    <circle cx="20" cy="17" r="5" fill="#ff5f57"/><circle cx="37" cy="17" r="5" fill="#febc2e"/><circle cx="54" cy="17" r="5" fill="#28c840"/>
+    <text x="205" y="22" text-anchor="middle" class="mono dim" style="font-size:12px">github.com/SrPirson/cabina</text>
+    
+    <rect x="0" y="34" width="410" height="3" fill="url(#accent)"/>
+    <g class="in" style="animation-delay:.15s">
+      <text x="20" y="72" style="font-size:20px; font-weight:700">cabina</text>
+      <text x="390" y="72" text-anchor="end" style="font-size:16px; fill:#6366f1">↗</text>
+      <text x="20" y="100" class="dim">Panel lateral para Claude Code: modelo,</text>
+      <text x="20" y="120" class="dim">contexto, límites y coste de un vistazo.</text>
+      <rect x="20" y="136" width="96" height="22" rx="11" fill="#e0f2fe"/><text x="68" y="151" text-anchor="middle" style="font-size:12px; fill:#0369a1">TypeScript</text><rect x="124" y="136" width="103.4" height="22" rx="11" fill="#e0e7ff"/><text x="175.7" y="151" text-anchor="middle" style="font-size:12px; fill:#4338ca">Claude Code</text>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="409" height="171" rx="10" fill="none" stroke="#d0d7de"/>
+</svg>

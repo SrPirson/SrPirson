@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="366" viewBox="0 0 840 366" role="img" aria-label="~/francisco — git log --graph">
+  <defs><linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366f1"/><stop offset="1" stop-color="#22d3ee"/></linearGradient><clipPath id="r"><rect width="840" height="366" rx="10"/></clipPath></defs>
+  <style>
+    text { font-family: 'Segoe UI', Inter, 'DejaVu Sans', Arial, sans-serif; font-size: 14px; fill: #e6edf3; }
+    .mono { font-family: Consolas, 'JetBrains Mono', 'DejaVu Sans Mono', monospace; white-space: pre; }
+    .dim { fill: #8b949e; }
+    .in { opacity: 0; animation: in .5s ease-out forwards; }
+    .caret { animation: blink 1s step-end infinite; }
+    @keyframes in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .in, .caret { animation: none; opacity: 1; } }
+  </style>
+  <g clip-path="url(#r)">
+    <rect width="840" height="366" fill="#0d1117"/>
+    <rect width="840" height="34" fill="#161b22"/>
+    <circle cx="20" cy="17" r="5" fill="#ff5f57"/><circle cx="37" cy="17" r="5" fill="#febc2e"/><circle cx="54" cy="17" r="5" fill="#28c840"/>
+    <text x="420" y="22" text-anchor="middle" class="mono dim" style="font-size:12px">~/francisco — git log --graph</text>
+    
+    <text x="20" y="54" class="mono"><tspan style="fill:#7ee787">$</tspan> git log --graph --oneline</text>
+    <line x1="34" y1="70" x2="34" y2="302" stroke="#d2a8ff" stroke-opacity=".5" stroke-width="2"/>
+    <g class="in" style="animation-delay:0.2s">
+      <circle cx="34" cy="70" r="6" fill="url(#accent)" stroke="none" stroke-width="2"/>
+      <text x="56" y="75" class="mono"><tspan style="fill:#e3b341">23c8bd2</tspan> <tspan style="fill:#56d4dd">(HEAD -&gt; main)</tspan> <tspan style="fill:#ff7b72">feat(job):</tspan> <tspan style="font-weight:600">Desarrollador Frontend @ BNT Business Telecom</tspan></text>
+      <text x="56" y="97" class="dim" style="font-size:13px">jun 2026 – actualidad · Málaga, híbrido · React · SaaS IoT (vDesk, HELIoT)</text>
+    </g>
+    <g class="in" style="animation-delay:0.45s">
+      <circle cx="34" cy="128" r="6" fill="#0d1117" stroke="#d2a8ff" stroke-width="2"/>
+      <text x="56" y="133" class="mono"><tspan style="fill:#e3b341">76b5dcd</tspan> <tspan style="fill:#ff7b72">feat(training):</tspan> <tspan style="font-weight:600">Desarrollador Full Stack @ Fundación Esplai, Talent IT</tspan></text>
+      <text x="56" y="155" class="dim" style="font-size:13px">sep – dic 2025 · Spring Boot · React · TypeScript · MySQL · Docker</text>
+    </g>
+    <g class="in" style="animation-delay:0.7s">
+      <circle cx="34" cy="186" r="6" fill="#0d1117" stroke="#d2a8ff" stroke-width="2"/>
+      <text x="56" y="191" class="mono"><tspan style="fill:#e3b341">0f4ab11</tspan> <tspan style="fill:#ff7b72">feat(internship):</tspan> <tspan style="font-weight:600">Desarrollador Web @ Internet Sin Riesgos</tspan></text>
+      <text x="56" y="213" class="dim" style="font-size:13px">mar – jun 2025 · en remoto · WordPress · WooCommerce · SEO on-page</text>
+    </g>
+    <g class="in" style="animation-delay:0.95s">
+      <circle cx="34" cy="244" r="6" fill="#0d1117" stroke="#d2a8ff" stroke-width="2"/>
+      <text x="56" y="249" class="mono"><tspan style="fill:#e3b341">83c324a</tspan> <tspan style="fill:#ff7b72">build(degree):</tspan> <tspan style="font-weight:600">Técnico Superior en Desarrollo de Aplicaciones Web @ MEDAC</tspan></text>
+      <text x="56" y="271" class="dim" style="font-size:13px">2023 – 2025</text>
+    </g>
+    <g class="in" style="animation-delay:1.2s">
+      <circle cx="34" cy="302" r="6" fill="#0d1117" stroke="#d2a8ff" stroke-width="2"/>
+      <text x="56" y="307" class="mono"><tspan style="fill:#e3b341">f512c00</tspan> <tspan style="fill:#ff7b72">init(degree):</tspan> <tspan style="font-weight:600">Técnico en Sistemas Microinformáticos y Redes @ IES Belén</tspan></text>
+      <text x="56" y="329" class="dim" style="font-size:13px">2018</text>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="839" height="365" rx="10" fill="none" stroke="#30363d"/>
+</svg>

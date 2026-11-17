@@ -3,6 +3,7 @@
 // Hand-written sources: assets/card-en.svg and assets/card-es.svg (dark theme).
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 
 const dir = new URL("../assets/", import.meta.url);
 const read = (f) => readFileSync(new URL(f, dir), "utf8");
@@ -172,4 +173,163 @@ if (existsSync(new URL("lighthouse.json", dir))) {
   const data = JSON.parse(read("lighthouse.json"));
   for (const l of LANGS) for (const th of Object.keys(THEMES)) write(`lighthouse-${l}-${th}.svg`, lighthouse(data, l, th));
 }
+// ---------- shared bits for the new sections ----------
+const ACCENT = `<linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366f1"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>`;
+const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const SYNTAX = {
+  dark: { key: "#7ee787", str: "#a5d6ff", kw: "#ff7b72", fn: "#d2a8ff", hash: "#e3b341", head: "#56d4dd" },
+  light: { key: "#116329", str: "#0a3069", kw: "#cf222e", fn: "#8250df", hash: "#9a6700", head: "#1b7c83" },
+};
+const ANIM = `
+    .in { opacity: 0; animation: in .5s ease-out forwards; }
+    .caret { animation: blink 1s step-end infinite; }
+    @keyframes in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .in, .caret { animation: none; opacity: 1; } }`;
+// window frame with a title bar: dots + centered title
+const frame = (c, w, h, title, body, defs = "") => `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(title)}">
+  <defs>${ACCENT}<clipPath id="r"><rect width="${w}" height="${h}" rx="10"/></clipPath>${defs}</defs>
+  <style>
+    text { ${FONT} font-size: 14px; fill: ${c.text}; }
+    .mono { ${MONO} white-space: pre; }
+    .dim { fill: ${c.dim}; }${ANIM}
+  </style>
+  <g clip-path="url(#r)">
+    <rect width="${w}" height="${h}" fill="${c.bg}"/>
+    <rect width="${w}" height="34" fill="${c.panel}"/>
+    <circle cx="20" cy="17" r="5" fill="#ff5f57"/><circle cx="37" cy="17" r="5" fill="#febc2e"/><circle cx="54" cy="17" r="5" fill="#28c840"/>
+    <text x="${w / 2}" y="22" text-anchor="middle" class="mono dim" style="font-size:12px">${esc(title)}</text>
+    ${body}
+  </g>
+  <rect x=".5" y=".5" width="${w - 1}" height="${h - 1}" rx="10" fill="none" stroke="${c.line}"/>
+</svg>
+`;
+const each = (name, fn) => { for (const l of LANGS) for (const th of Object.keys(THEMES)) write(`${name}-${l}-${th}.svg`, fn(l, th)); };
+
+// ---------- 4. Experience & education as `git log --graph` ----------
+const LOG = [
+  { scope: "feat(job)", en: "Frontend Developer @ BNT Business Telecom", es: "Desarrollador Frontend @ BNT Business Telecom",
+    meta: { en: "Jun 2026 – present · Málaga, hybrid · React · IoT SaaS (vDesk, HELIoT)", es: "jun 2026 – actualidad · Málaga, híbrido · React · SaaS IoT (vDesk, HELIoT)" } },
+  { scope: "feat(training)", en: "Full Stack Developer @ Fundación Esplai, Talent IT", es: "Desarrollador Full Stack @ Fundación Esplai, Talent IT",
+    meta: { en: "Sep – Dec 2025 · Spring Boot · React · TypeScript · MySQL · Docker", es: "sep – dic 2025 · Spring Boot · React · TypeScript · MySQL · Docker" } },
+  { scope: "feat(internship)", en: "Web Developer @ Internet Sin Riesgos", es: "Desarrollador Web @ Internet Sin Riesgos",
+    meta: { en: "Mar – Jun 2025 · remote · WordPress · WooCommerce · on-page SEO", es: "mar – jun 2025 · en remoto · WordPress · WooCommerce · SEO on-page" } },
+  { scope: "build(degree)", en: "Higher Technician in Web App Development (DAW) @ MEDAC", es: "Técnico Superior en Desarrollo de Aplicaciones Web @ MEDAC",
+    meta: { en: "2023 – 2025", es: "2023 – 2025" } },
+  { scope: "init(degree)", en: "Technician in Microcomputer Systems and Networks @ IES Belén", es: "Técnico en Sistemas Microinformáticos y Redes @ IES Belén",
+    meta: { en: "2018", es: "2018" } },
+];
+const sha = (s) => createHash("sha1").update(s).digest("hex").slice(0, 7);
+each("experience", (lang, theme) => {
+  const c = THEMES[theme], s = SYNTAX[theme], RH = 58, Y0 = 70, H = Y0 + LOG.length * RH + 6;
+  const rows = LOG.map((e, i) => {
+    const y = Y0 + i * RH, d = `style="animation-delay:${0.2 + i * 0.25}s"`;
+    const head = i === 0 ? `<tspan style="fill:${s.head}">(HEAD -&gt; main)</tspan> ` : "";
+    return `<g class="in" ${d}>
+      <circle cx="34" cy="${y}" r="6" fill="${i === 0 ? "url(#accent)" : c.bg}" stroke="${i === 0 ? "none" : s.fn}" stroke-width="2"/>
+      <text x="56" y="${y + 5}" class="mono"><tspan style="fill:${s.hash}">${sha(e.en)}</tspan> ${head}<tspan style="fill:${s.kw}">${e.scope}:</tspan> <tspan style="font-weight:600">${esc(e[lang])}</tspan></text>
+      <text x="56" y="${y + 27}" class="dim" style="font-size:13px">${esc(e.meta[lang])}</text>
+    </g>`;
+  }).join("\n    ");
+  return frame(c, 840, H, "~/francisco — git log --graph", `
+    <text x="20" y="54" class="mono"><tspan style="fill:${s.key}">$</tspan> git log --graph --oneline</text>
+    <line x1="34" y1="${Y0}" x2="34" y2="${Y0 + (LOG.length - 1) * RH}" stroke="${s.fn}" stroke-opacity=".5" stroke-width="2"/>
+    ${rows}`);
+});
+
+// ---------- 5. Featured projects as clickable cards ----------
+export const PROJECTS = [
+  { id: "portfolio", url: "pirson.dev", title: "Portfolio", stack: ["React", "Vite", "Tailwind"],
+    en: ["My personal site: projects, experience", "and certifications, in two languages."],
+    es: ["Mi web personal: proyectos, experiencia", "y certificaciones, en dos idiomas."] },
+  { id: "box-box", url: "github.com/SrPirson/Box-Box", title: "Box Box", stack: ["PWA", "Node.js", "Socket.io"],
+    en: ["PWA for race teams: live comms, lap", "timing and telemetry, pit wall to driver."],
+    es: ["PWA para equipos de carreras: radio,", "cronometraje y telemetría muro-piloto."] },
+  { id: "unfollowers", url: "unfollowers-ig-extension.vercel.app", title: "Instagram Unfollowers", stack: ["TypeScript", "Manifest V3"],
+    en: ["Browser extension that shows who doesn't", "follow you back. Light/dark, 10 languages."],
+    es: ["Extensión que muestra quién no te sigue", "de vuelta. Modo claro/oscuro, 10 idiomas."] },
+  { id: "cleanworld", url: "github.com/SrPirson/TerraDev_CleanWorld", title: "CleanWorld", stack: ["React", "TypeScript", "Spring Boot"],
+    en: ["Full stack app for cleanup services,", "built end to end at Fundación Esplai."],
+    es: ["App full stack de servicios de limpieza,", "hecha de principio a fin en Fundación Esplai."] },
+  { id: "cabina", url: "github.com/SrPirson/cabina", title: "cabina", stack: ["TypeScript", "Claude Code"],
+    en: ["Side pane for Claude Code: model,", "context, limits and cost at a glance."],
+    es: ["Panel lateral para Claude Code: modelo,", "contexto, límites y coste de un vistazo."] },
+  { id: "webeyes", url: "github.com/SrPirson/webeyes", title: "webeyes", stack: ["Python", "Claude Code"],
+    en: ["Claude Code plugin that lets the agent", "watch and summarize videos."],
+    es: ["Plugin de Claude Code para que el agente", "vea y resuma vídeos."] },
+];
+const CHIP = { light: ["#e0f2fe", "#0369a1", "#e0e7ff", "#4338ca", "#ccfbf1", "#0f766e"], dark: ["#0c2d48", "#7dd3fc", "#1e1b4b", "#a5b4fc", "#042f2e", "#5eead4"] };
+for (const p of PROJECTS) each(`project-${p.id}`, (lang, theme) => {
+  const c = THEMES[theme], ch = CHIP[theme];
+  let x = 20;
+  const chips = p.stack.map((t, i) => {
+    const w = t.length * 7.4 + 22, g = `<rect x="${x}" y="136" width="${w}" height="22" rx="11" fill="${ch[i * 2]}"/><text x="${x + w / 2}" y="151" text-anchor="middle" style="font-size:12px; fill:${ch[i * 2 + 1]}">${t}</text>`;
+    x += w + 8; return g;
+  }).join("");
+  return frame(c, 410, 172, p.url, `
+    <rect x="0" y="34" width="410" height="3" fill="url(#accent)"/>
+    <g class="in" style="animation-delay:.15s">
+      <text x="20" y="72" style="font-size:20px; font-weight:700">${esc(p.title)}</text>
+      <text x="390" y="72" text-anchor="end" style="font-size:16px; fill:#6366f1">↗</text>
+      <text x="20" y="100" class="dim">${esc(p[lang][0])}</text>
+      <text x="20" y="120" class="dim">${esc(p[lang][1])}</text>
+      ${chips}
+    </g>`);
+});
+
+// ---------- 6. Tech stack as a package.json ----------
+const STACK = {
+  dependencies: [["react", "^19.2.0"], ["typescript", "*"], ["tailwindcss", "^4.1.14"], ["vite", "^7.1.7"], ["motion", "^12.35.1"], ["react-router-dom", "^7.9.3"], ["i18next", "^25.6.0"], ["radix-ui", "^1.4.3"]],
+  peerDependencies: [["java", "*"], ["spring-boot", "*"], ["php", "*"], ["laravel", "*"], ["node", "*"], ["express", "*"]],
+  devDependencies: [["git", "*"], ["docker", "*"], ["mysql", "*"], ["postgresql", "*"], ["swagger", "*"], ["junit", "*"], ["wordpress", "*"]],
+};
+const SCRIPTS = {
+  en: [["dev", "design && build interfaces"], ["build", "ship accessible UIs"], ["test", "review && iterate"]],
+  es: [["dev", "diseñar && construir interfaces"], ["build", "publicar UIs accesibles"], ["test", "revisar && iterar"]],
+};
+each("stack", (lang, th) => {
+  const c = THEMES[th], s = SYNTAX[th], LH = 21;
+  const line = (x, y, k, v, comma, i) => `<text x="${x}" y="${y}" class="mono in" style="animation-delay:${(0.1 + i * 0.04).toFixed(2)}s">${" ".repeat(4)}<tspan style="fill:${s.key}">"${k}"</tspan>: <tspan style="fill:${s.str}">"${esc(v)}"</tspan>${comma ? "," : ""}</text>`;
+  const block = (x, y0, name, list, last, i0) => {
+    const out = [`<text x="${x}" y="${y0}" class="mono in" style="animation-delay:${(0.1 + i0 * 0.04).toFixed(2)}s">  <tspan style="fill:${s.key}">"${name}"</tspan>: {</text>`];
+    list.forEach(([k, v], j) => out.push(line(x, y0 + (j + 1) * LH, k, v, j < list.length - 1, i0 + j + 1)));
+    out.push(`<text x="${x}" y="${y0 + (list.length + 1) * LH}" class="mono">  }${last ? "" : ","}</text>`);
+    return out.join("\n    ");
+  };
+  const Y = 76, H = Y + 19 * LH + 4; // right column: 6 peer + 7 dev rows + braces
+  const body = `
+    <text x="20" y="${Y - 18}" class="mono">{</text>
+    <text x="20" y="${Y + 3}" class="mono">  <tspan style="fill:${s.key}">"name"</tspan>: <tspan style="fill:${s.str}">"francisco-cortes-pirson"</tspan>,</text>
+    <text x="20" y="${Y + 3 + LH}" class="mono">  <tspan style="fill:${s.key}">"role"</tspan>: <tspan style="fill:${s.str}">"frontend"</tspan>,</text>
+    ${block(20, Y + 3 + 2 * LH, "dependencies", STACK.dependencies, false, 0)}
+    ${block(20, Y + 3 + 12 * LH, "scripts", SCRIPTS[lang], false, 10)}
+    ${block(440, Y + 3, "peerDependencies", STACK.peerDependencies, false, 4)}
+    ${block(440, Y + 3 + 8 * LH, "devDependencies", STACK.devDependencies, true, 12)}
+    <text x="20" y="${H - 14}" class="mono">}</text>`;
+  return frame(c, 840, H, "package.json", body);
+});
+
+// ---------- 7. Buttons and console footer ----------
+const BUTTONS = {
+  portfolio: { en: "pirson.dev ↗", es: "pirson.dev ↗" },
+  linkedin: { en: "LinkedIn ↗", es: "LinkedIn ↗" },
+  cv: { en: "Download CV ↓", es: "Descargar CV ↓" },
+};
+for (const [id, label] of Object.entries(BUTTONS)) each(`button-${id}`, (lang, theme) => {
+  const c = THEMES[theme];
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="200" height="48" viewBox="0 0 200 48" role="img" aria-label="${esc(label[lang])}">
+  <defs>${ACCENT}</defs>
+  <rect x="1" y="1" width="198" height="46" rx="23" fill="${id === "portfolio" ? "url(#accent)" : c.bg}" stroke="url(#accent)" stroke-width="2"/>
+  <text x="100" y="30" text-anchor="middle" style="${FONT} font-size:15px; font-weight:600; fill:${id === "portfolio" ? "#fff" : c.text}">${esc(label[lang])}</text>
+</svg>
+`;
+});
+const BYE = { en: "Thanks for stopping by. Let's build something great together.", es: "Gracias por pasarte. Construyamos algo increíble juntos." };
+each("footer", (lang, theme) => {
+  const c = THEMES[theme], s = SYNTAX[theme];
+  return frame(c, 840, 112, "console", `
+    <text x="20" y="62" class="mono in" style="animation-delay:.2s"><tspan style="fill:#3b82f6">&gt;</tspan> console.<tspan style="fill:${s.fn}">log</tspan>(<tspan style="fill:${s.str}">"${esc(BYE[lang])}"</tspan>)</text>
+    <text x="20" y="90" class="mono in" style="animation-delay:.9s"><tspan style="fill:#3b82f6">&gt;</tspan> <tspan class="caret" style="fill:#22d3ee">▍</tspan></text>`);
+});
+
 console.log("built assets");
