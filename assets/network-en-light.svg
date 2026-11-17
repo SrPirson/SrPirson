@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="354" viewBox="0 0 840 354" role="img" aria-label="Career timeline drawn as a browser DevTools Network panel">
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="380" viewBox="0 0 840 380" role="img" aria-label="Career timeline drawn as a browser DevTools Network panel">
   <defs>
-    <clipPath id="r"><rect width="840" height="354" rx="10"/></clipPath>
+    <clipPath id="r"><rect width="840" height="380" rx="10"/></clipPath>
     <pattern id="stripes" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
       <rect width="8" height="8" fill="#57606a" fill-opacity=".25"/><rect width="4" height="8" fill="#57606a" fill-opacity=".6"/>
     </pattern>
@@ -16,7 +16,7 @@
     @media (prefers-reduced-motion: reduce) { .bar, .pend { animation: none; transform: none; } }
   </style>
   <g clip-path="url(#r)">
-    <rect width="840" height="354" fill="#ffffff"/>
+    <rect width="840" height="380" fill="#ffffff"/>
     <rect width="840" height="36" fill="#f6f8fa"/>
     <text x="16" y="23" class="dim">Elements</text><text x="112" y="23" class="dim">Console</text><text x="208" y="23" class="dim">Sources</text><text x="304" y="23" class="">Network</text><text x="400" y="23" class="dim">Performance</text>
     <rect x="298" y="33" width="70" height="3" fill="#3b82f6"/>
@@ -27,51 +27,55 @@
     <text x="214" y="79" class="">200</text>
     <text x="304" y="79" class="dim">education</text><rect class="bar" x="420.0" y="70" width="193.6" height="10" rx="2" fill="#8b5cf6" style="animation-delay:0s"/>
     <rect x="0" y="88" width="840" height="26" fill="#f6f8fa"/>
-    <text x="16" y="105" class="mono">unfollowers-ig.ts</text>
+    <text x="16" y="105" class="mono">internet-sin-riesgos</text>
     <text x="214" y="105" class="">200</text>
-    <text x="304" y="105" class="dim">project</text><rect class="bar" x="578.4" y="96" width="158.4" height="10" rx="2" fill="#3b82f6" style="animation-delay:0.15s"/>
+    <text x="304" y="105" class="dim">internship</text><rect class="bar" x="578.4" y="96" width="35.2" height="10" rx="2" fill="#14b8a6" style="animation-delay:0.15s"/>
     <rect x="0" y="114" width="840" height="26" fill="#ffffff"/>
-    <text x="16" y="131" class="mono">tfg-socialicar.php</text>
+    <text x="16" y="131" class="mono">unfollowers-ig.ts</text>
     <text x="214" y="131" class="">200</text>
-    <text x="304" y="131" class="dim">project</text><rect class="bar" x="596.0" y="122" width="17.6" height="10" rx="2" fill="#3b82f6" style="animation-delay:0.3s"/>
+    <text x="304" y="131" class="dim">project</text><rect class="bar" x="578.4" y="122" width="158.4" height="10" rx="2" fill="#3b82f6" style="animation-delay:0.3s"/>
     <rect x="0" y="140" width="840" height="26" fill="#f6f8fa"/>
-    <text x="16" y="157" class="mono">java-bootcamp</text>
+    <text x="16" y="157" class="mono">tfg-socialicar.php</text>
     <text x="214" y="157" class="">200</text>
-    <text x="304" y="157" class="dim">education</text><rect class="bar" x="631.2" y="148" width="26.4" height="10" rx="2" fill="#8b5cf6" style="animation-delay:0.44999999999999996s"/>
+    <text x="304" y="157" class="dim">project</text><rect class="bar" x="596.0" y="148" width="17.6" height="10" rx="2" fill="#3b82f6" style="animation-delay:0.44999999999999996s"/>
     <rect x="0" y="166" width="840" height="26" fill="#ffffff"/>
-    <text x="16" y="183" class="mono">portfolio.tsx</text>
+    <text x="16" y="183" class="mono">esplai-talent-it</text>
     <text x="214" y="183" class="">200</text>
-    <text x="304" y="183" class="dim">project</text><rect class="bar" x="640.0" y="174" width="123.2" height="10" rx="2" fill="#3b82f6" style="animation-delay:0.6s"/>
+    <text x="304" y="183" class="dim">training</text><rect class="bar" x="631.2" y="174" width="35.2" height="10" rx="2" fill="#a855f7" style="animation-delay:0.6s"/>
     <rect x="0" y="192" width="840" height="26" fill="#f6f8fa"/>
-    <text x="16" y="209" class="mono">nexecare-hackathon</text>
+    <text x="16" y="209" class="mono">portfolio.tsx</text>
     <text x="214" y="209" class="">200</text>
-    <text x="304" y="209" class="dim">hackathon</text><rect class="bar" x="648.8" y="200" width="8.8" height="10" rx="2" fill="#f59e0b" style="animation-delay:0.75s"/>
+    <text x="304" y="209" class="dim">project</text><rect class="bar" x="640.0" y="200" width="123.2" height="10" rx="2" fill="#3b82f6" style="animation-delay:0.75s"/>
     <rect x="0" y="218" width="840" height="26" fill="#ffffff"/>
-    <text x="16" y="235" class="mono">terradev-cleanworld</text>
+    <text x="16" y="235" class="mono">nexecare-hackathon</text>
     <text x="214" y="235" class="">200</text>
-    <text x="304" y="235" class="dim">project</text><rect class="bar" x="657.6" y="226" width="44.0" height="10" rx="2" fill="#3b82f6" style="animation-delay:0.8999999999999999s"/>
+    <text x="304" y="235" class="dim">hackathon</text><rect class="bar" x="648.8" y="226" width="8.8" height="10" rx="2" fill="#f59e0b" style="animation-delay:0.8999999999999999s"/>
     <rect x="0" y="244" width="840" height="26" fill="#f6f8fa"/>
-    <text x="16" y="261" class="mono">box-box.pwa</text>
+    <text x="16" y="261" class="mono">bnt-business-telecom</text>
     <text x="214" y="261" class="">200</text>
-    <text x="304" y="261" class="dim">project</text><rect class="bar" x="745.6" y="252" width="17.6" height="10" rx="2" fill="#3b82f6" style="animation-delay:1.05s"/>
+    <text x="304" y="261" class="dim">job</text><rect class="bar" x="710.4" y="252" width="52.8" height="10" rx="2" fill="#22c55e" style="animation-delay:1.05s"/>
     <rect x="0" y="270" width="840" height="26" fill="#ffffff"/>
-    <text x="16" y="287" class="mono">cabina.tsx</text>
+    <text x="16" y="287" class="mono">box-box.pwa</text>
     <text x="214" y="287" class="">200</text>
     <text x="304" y="287" class="dim">project</text><rect class="bar" x="745.6" y="278" width="17.6" height="10" rx="2" fill="#3b82f6" style="animation-delay:1.2s"/>
     <rect x="0" y="296" width="840" height="26" fill="#f6f8fa"/>
-    <text x="16" y="313" class="mono">next-role.tsx</text>
-    <text x="214" y="313" class="dim">(pending)</text>
-    <text x="304" y="313" class="dim">career</text><rect class="bar pend" x="754.4" y="304" width="61.6" height="10" rx="2" fill="url(#stripes)" style="animation-delay:1.3499999999999999s,1.9499999999999997s"/>
-    <line x1="455.2" y1="36" x2="455.2" y2="324" stroke="#d0d7de"/><text x="459.2" y="54" class="dim">2024</text>
-    <line x1="560.8" y1="36" x2="560.8" y2="324" stroke="#d0d7de"/><text x="564.8" y="54" class="dim">2025</text>
-    <line x1="666.4" y1="36" x2="666.4" y2="324" stroke="#d0d7de"/><text x="670.4" y="54" class="dim">2026</text>
-    <line x1="772.0" y1="36" x2="772.0" y2="324" stroke="#d0d7de"/><text x="776" y="54" class="dim">2027</text>
-    <line x1="759.2" y1="36" x2="759.2" y2="324" stroke="#ef4444" stroke-width="1.5"/>
-    <text x="755.2" y="318" text-anchor="end" style="fill:#ef4444; font-size:11px">today</text>
+    <text x="16" y="313" class="mono">cabina.tsx</text>
+    <text x="214" y="313" class="">200</text>
+    <text x="304" y="313" class="dim">project</text><rect class="bar" x="745.6" y="304" width="17.6" height="10" rx="2" fill="#3b82f6" style="animation-delay:1.3499999999999999s"/>
+    <rect x="0" y="322" width="840" height="26" fill="#ffffff"/>
+    <text x="16" y="339" class="mono">next-challenge.tsx</text>
+    <text x="214" y="339" class="dim">(pending)</text>
+    <text x="304" y="339" class="dim">career</text><rect class="bar pend" x="754.4" y="330" width="61.6" height="10" rx="2" fill="url(#stripes)" style="animation-delay:1.5s,2.1s"/>
+    <line x1="455.2" y1="36" x2="455.2" y2="350" stroke="#d0d7de"/><text x="459.2" y="54" class="dim">2024</text>
+    <line x1="560.8" y1="36" x2="560.8" y2="350" stroke="#d0d7de"/><text x="564.8" y="54" class="dim">2025</text>
+    <line x1="666.4" y1="36" x2="666.4" y2="350" stroke="#d0d7de"/><text x="670.4" y="54" class="dim">2026</text>
+    <line x1="772.0" y1="36" x2="772.0" y2="350" stroke="#d0d7de"/><text x="776" y="54" class="dim">2027</text>
+    <line x1="759.2" y1="36" x2="759.2" y2="350" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="755.2" y="344" text-anchor="end" style="fill:#ef4444; font-size:11px">today</text>
     <line x1="0" y1="62" x2="840" y2="62" stroke="#d0d7de"/>
-    <line x1="0" y1="324" x2="840" y2="324" stroke="#d0d7de"/>
-    <rect y="324" width="840" height="30" fill="#f6f8fa"/>
-    <text x="16" y="343" class="dim">10 requests  ·  Finish: still loading…</text>
+    <line x1="0" y1="350" x2="840" y2="350" stroke="#d0d7de"/>
+    <rect y="350" width="840" height="30" fill="#f6f8fa"/>
+    <text x="16" y="369" class="dim">11 requests  ·  Finish: still loading…</text>
   </g>
-  <rect x=".5" y=".5" width="839" height="353" rx="10" fill="none" stroke="#d0d7de"/>
+  <rect x=".5" y=".5" width="839" height="379" rx="10" fill="none" stroke="#d0d7de"/>
 </svg>

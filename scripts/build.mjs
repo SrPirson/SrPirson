@@ -29,26 +29,27 @@ for (const l of LANGS) {
 // ---------- 2. Career timeline drawn as the DevTools Network panel ----------
 const NET = {
   en: { tabs: ["Elements", "Console", "Sources", "Network", "Performance"], cols: ["Name", "Status", "Type", "Waterfall"],
-    types: { edu: "education", proj: "project", hack: "hackathon", next: "career" }, pending: "(pending)", today: "today",
+    types: { job: "job", intern: "internship", train: "training", edu: "education", proj: "project", hack: "hackathon", next: "career" }, pending: "(pending)", today: "today",
     foot: (n) => `${n} requests  ·  Finish: still loading…` },
   es: { tabs: ["Elements", "Console", "Sources", "Network", "Performance"], cols: ["Nombre", "Estado", "Tipo", "Cascada"],
-    types: { edu: "formación", proj: "proyecto", hack: "hackathon", next: "carrera" }, pending: "(pendiente)", today: "hoy",
+    types: { job: "empleo", intern: "prácticas", train: "formación", edu: "estudios", proj: "proyecto", hack: "hackathon", next: "carrera" }, pending: "(pendiente)", today: "hoy",
     foot: (n) => `${n} peticiones  ·  Fin: aún cargando…` },
 };
 // [name en, name es, type, start YYYY-MM, end YYYY-MM | null = today]
 const ROWS = [
   ["daw-degree", "grado-daw", "edu", "2023-09", "2025-06"],
+  ["internet-sin-riesgos", "internet-sin-riesgos", "intern", "2025-03", "2025-06"],
   ["unfollowers-ig.ts", "unfollowers-ig.ts", "proj", "2025-03", "2026-08"],
   ["tfg-socialicar.php", "tfg-socialicar.php", "proj", "2025-05", "2025-06"],
-  ["java-bootcamp", "bootcamp-java", "edu", "2025-09", "2025-11"],
+  ["esplai-talent-it", "esplai-talent-it", "train", "2025-09", "2025-12"],
   ["portfolio.tsx", "portfolio.tsx", "proj", "2025-10", null],
   ["nexecare-hackathon", "hackathon-nexecare", "hack", "2025-11", "2025-11"],
-  ["terradev-cleanworld", "terradev-cleanworld", "proj", "2025-12", "2026-04"],
+  ["bnt-business-telecom", "bnt-business-telecom", "job", "2026-06", null],
   ["box-box.pwa", "box-box.pwa", "proj", "2026-10", null],
   ["cabina.tsx", "cabina.tsx", "proj", "2026-10", null],
-  ["next-role.tsx", "siguiente-puesto.tsx", "next", null, null],
+  ["next-challenge.tsx", "siguiente-reto.tsx", "next", null, null],
 ];
-const BAR = { edu: "#8b5cf6", proj: "#3b82f6", hack: "#f59e0b" };
+const BAR = { job: "#22c55e", intern: "#14b8a6", train: "#a855f7", edu: "#8b5cf6", proj: "#3b82f6", hack: "#f59e0b" };
 const now = new Date();
 const months = (ym) => { const [y, m] = ym.split("-").map(Number); return y * 12 + m - 1; };
 const NOW = now.getFullYear() * 12 + now.getMonth();
