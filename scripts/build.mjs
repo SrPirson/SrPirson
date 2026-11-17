@@ -120,7 +120,11 @@ for (const l of LANGS) for (const th of Object.keys(THEMES)) write(`network-${l}
 // ---------- 3. Lighthouse scores of pirson.dev ----------
 const report = process.argv[2];
 if (report) {
-  const cats = JSON.parse(readFileSync(report, "utf8")).categories;
+  const { categories: cats, audits } = JSON.parse(readFileSync(report, "utf8"));
+  for (const [k, cat] of Object.entries(cats)) for (const { id } of cat.auditRefs) {
+    const a = audits[id];
+    if (a.score !== null && a.score < 1 && a.scoreDisplayMode !== "informative") console.log(`[${k}] ${id}: ${a.title}`);
+  }
   const score = (k) => Math.round((cats[k]?.score ?? 0) * 100);
   write("lighthouse.json", JSON.stringify({
     date: now.toISOString().slice(0, 10),
