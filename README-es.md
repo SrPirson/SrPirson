@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="assets/card-es.svg" width="760" alt="Una ventana de navegador donde se escribe un componente React llamado Francisco y después se renderiza: Desarrollador Frontend de Málaga, España, con React, TypeScript y Tailwind, además de Java, Spring Boot y PHP."/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/card-es.svg"/>
+    <img src="assets/card-es-light.svg" width="760" alt="Una ventana de navegador donde se escribe un componente React llamado Francisco y después se renderiza: Desarrollador Frontend de Málaga, España, con React, TypeScript y Tailwind, además de Java, Spring Boot y PHP."/>
+  </picture>
 </p>
 
 <p align="center">
@@ -12,6 +15,13 @@
 </p>
 
 Soy **desarrollador frontend** con el Grado Superior en Desarrollo de Aplicaciones Web (DAW). Construyo interfaces rápidas y accesibles con **React, TypeScript y Tailwind**, y me desenvuelvo en el backend con **Java, Spring Boot y PHP** cuando un proyecto necesita el stack completo.
+
+## Trayectoria
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/network-es-dark.svg"/>
+  <img src="assets/network-es-light.svg" width="100%" alt="Mi trayectoria como el panel Network de DevTools: Grado DAW (sep 2023 a jun 2025), Instagram Unfollowers, el TFG SocialiCar, bootcamp de Java, portfolio, hackathon NexeCare, TerraDev CleanWorld, Box Box y cabina. La siguiente petición, siguiente-puesto.tsx, sigue pendiente."/>
+</picture>
 
 ## Proyectos destacados
 

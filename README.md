@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="assets/card-en.svg" width="760" alt="A browser window where a React component called Francisco is typed out and then rendered: Frontend Developer from Málaga, Spain, working with React, TypeScript and Tailwind, plus Java, Spring Boot and PHP."/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/card-en.svg"/>
+    <img src="assets/card-en-light.svg" width="760" alt="A browser window where a React component called Francisco is typed out and then rendered: Frontend Developer from Málaga, Spain, working with React, TypeScript and Tailwind, plus Java, Spring Boot and PHP."/>
+  </picture>
 </p>
 
 <p align="center">
@@ -12,6 +15,13 @@
 </p>
 
 I'm a **frontend developer** with a Higher Technical Degree in Web Application Development (DAW). I build fast, accessible interfaces with **React, TypeScript and Tailwind**, and I'm comfortable on the backend with **Java, Spring Boot and PHP** when a project needs the full stack.
+
+## Journey
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/network-en-dark.svg"/>
+  <img src="assets/network-en-light.svg" width="100%" alt="My journey as a DevTools Network panel: DAW degree (Sep 2023 to Jun 2025), Instagram Unfollowers, final degree project SocialiCar, Java bootcamp, portfolio, NexeCare hackathon, TerraDev CleanWorld, Box Box and cabina. The next request, next-role.tsx, is still pending."/>
+</picture>
 
 ## Featured projects
 
