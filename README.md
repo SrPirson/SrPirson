@@ -54,6 +54,15 @@ I'm a **frontend developer** at **BNT Business Telecom**, where I build React in
 | [SocialiCar](https://github.com/SrPirson/TFG-SocialiCar) · [live](https://socialicar.wuaze.com/) | Final degree project (DAW) | PHP · JavaScript · SCSS |
 | [NexeCare](https://github.com/SrPirson/NexeCare-Hackathon) | Hackathon project | JavaScript · Java |
 
+## pirson.dev, measured weekly
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/lighthouse-en-dark.svg"/>
+  <img src="assets/lighthouse-en-light.svg" width="100%" alt="Lighthouse scores for pirson.dev, refreshed every week by a GitHub Action."/>
+</picture>
+
+<sub>A GitHub Action audits my portfolio with Lighthouse every Monday and redraws this card.</sub>
+
 ## Tech stack
 
 **Frontend**<br/>

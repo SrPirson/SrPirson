@@ -54,6 +54,15 @@ Soy **desarrollador frontend** en **BNT Business Telecom**, donde construyo inte
 | [SocialiCar](https://github.com/SrPirson/TFG-SocialiCar) · [demo](https://socialicar.wuaze.com/) | Proyecto de fin de grado (DAW) | PHP · JavaScript · SCSS |
 | [NexeCare](https://github.com/SrPirson/NexeCare-Hackathon) | Proyecto de hackathon | JavaScript · Java |
 
+## pirson.dev, medido cada semana
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/lighthouse-es-dark.svg"/>
+  <img src="assets/lighthouse-es-light.svg" width="100%" alt="Puntuaciones de Lighthouse de pirson.dev, actualizadas cada semana por una GitHub Action."/>
+</picture>
+
+<sub>Una GitHub Action audita mi portfolio con Lighthouse cada lunes y vuelve a dibujar esta tarjeta.</sub>
+
 ## Stack técnico
 
 **Frontend**<br/>
