@@ -126,7 +126,7 @@ if (report) {
     const a = audits[id];
     if (a.score === null || a.score === 1 || a.scoreDisplayMode === "informative") continue;
     console.log(`[${k}] ${id}: ${a.title}`);
-    if (k !== "performance") for (const it of a.details?.items ?? []) console.log(`    ${it.node?.snippet ?? JSON.stringify(it).slice(0, 200)}`);
+    if (k !== "performance") for (const it of (a.details?.items ?? []).slice(0, 5)) console.log(`    ${it.node?.snippet ?? JSON.stringify(it).slice(0, 200)}`);
   }
   const score = (k) => Math.round((cats[k]?.score ?? 0) * 100);
   write("lighthouse.json", JSON.stringify({
