@@ -70,8 +70,8 @@
     <line x1="560.8" y1="36" x2="560.8" y2="350" stroke="#d0d7de"/><text x="564.8" y="54" class="dim">2025</text>
     <line x1="666.4" y1="36" x2="666.4" y2="350" stroke="#d0d7de"/><text x="670.4" y="54" class="dim">2026</text>
     <line x1="772.0" y1="36" x2="772.0" y2="350" stroke="#d0d7de"/><text x="776" y="54" class="dim">2027</text>
-    <line x1="759.2" y1="36" x2="759.2" y2="350" stroke="#ef4444" stroke-width="1.5"/>
-    <text x="755.2" y="344" text-anchor="end" style="fill:#ef4444; font-size:11px">today</text>
+    <line x1="760.9" y1="36" x2="760.9" y2="350" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="756.9" y="344" text-anchor="end" style="fill:#ef4444; font-size:11px">today</text>
     <line x1="0" y1="62" x2="840" y2="62" stroke="#d0d7de"/>
     <line x1="0" y1="350" x2="840" y2="350" stroke="#d0d7de"/>
     <rect y="350" width="840" height="30" fill="#f6f8fa"/>
